@@ -1,2 +1,16 @@
-def menu():
-    print("Este menu")
+palabras_wordle = {1:'huevo'
+                   2:'pasto'
+                   3:'queso'
+                   4:'fuego'
+                   5:'salmon'
+                   6:'chayle'
+                   7:'hueso'
+                   8:'carne'
+                   9:'papas'
+                   10:'rimar'
+                   11:'salir
+                   12:'comer'
+                   13:'pasar'
+                   14:'tocar'
+                   15:'salvay'
+                   16:'partir'}
