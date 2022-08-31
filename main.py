@@ -2,16 +2,10 @@ import random
 from funciones import *
 win = False
 palabra_random = random.choice(palabras_wordle)
-colors = {
-    'green': '\033[92m',
-    'yellow': '\033[93m',
-    'red': '\033[91m',
-    'ENDC': '\033[0m',
-}
-def color_letter(letter, color):
-    return colors[color] + letter + colors['ENDC']
+
 decision = input('1. Jugar\n')
 if decision == '1':
+    print('escribi tu palabra')
     board = []
     for i in range(6):
         board.append(['_' for l in range(6)])
@@ -20,11 +14,12 @@ if decision == '1':
     while (not win) and (game_loop_counter < len(palabra_random)):
         text = input ('')
         while len (text) != len(palabra_random):
-            print(f'la palabra debe tener {len(palabra_random)} de caracteres')
+            print(f'la palabra debe tener {len(palabra_random)} letras')
             text = input('')
 
 
         if palabra_random == text:
+            print('ganaste paaaaa')
             board[game_loop_counter] = [l for l in text]
             win = True
         else:
@@ -42,7 +37,10 @@ if decision == '1':
             print(" ".join(board[i]))
 
         game_loop_counter += 1
-
+    if win:
+        print(f'ganaste paaa, la palabra era{palabra_random}')
+    else:
+        ´print(f'perdiste salame la palabra era{palabra_random}')
 
 
 

@@ -72,7 +72,7 @@ palabras_wordle = {1.:'fabula',
                    73.:'palito',
                    74.:'palpas',
                    75.:'ordeno',
-                   76.:'meulas',
+                   76.:'muelas',
                    77.:'perros',
                    78.:'persas',
                    79.:'picara',
@@ -110,7 +110,7 @@ colors = {
     'ENDC': '\033[0m',
 }
 def color_letter(letter, color):
-    return colors[color] + letter + color['ENDC']
+    return colors[color] + letter + colors['ENDC']
 
 
 
