@@ -38,9 +38,9 @@ if decision == '1':
 
         game_loop_counter += 1
     if win:
-        print(f'ganaste paaa, la palabra era{palabra_random}')
+        print(f'ganaste paaa, la palabra era {palabra_random}')
     else:
-        print(f'perdiste salame la palabra era{palabra_random}')
+        print(f'perdiste salame la palabra era {palabra_random}')
 
 
 
