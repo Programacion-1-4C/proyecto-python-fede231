@@ -46,7 +46,7 @@ palabras_wordle = {1.:'fabula',
                    47.:'mentir',
                    48.:'negros',
                    49.:'niggas',
-                   50.:'nigger',
+                   50.:'polipo',
                    51.:'leches',
                    52.:'lirios',
                    53.:'madres',
@@ -103,14 +103,14 @@ palabras_wordle = {1.:'fabula',
                    104.:'bardos'
                    }
 
-colors = {
-    'green': '\033[92m',
-    'yellow': '\033[93m',
-    'red': '\033[91m',
+colores = {
+    'verde': '\033[92m',
+    'amarillo': '\033[93m',
+    'rojo': '\033[91m',
     'ENDC': '\033[0m',
 }
-def color_letter(letter, color):
-    return colors[color] + letter + colors['ENDC']
+def color_de_letra(letra, color):
+    return colores[color] + letra + colores['ENDC']
 
 
 
